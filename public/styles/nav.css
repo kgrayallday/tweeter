@@ -1,0 +1,24 @@
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:120px;
+  width: 100vw;
+  background-color: #4056A1;
+  color: #FFFFFF;
+
+}
+
+nav span {
+  font-family: 'Bungee';
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+#nav-spacer{
+  width:100%;
+}
+
+#nav-action-text{
+
+}
