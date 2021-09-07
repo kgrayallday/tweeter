@@ -1,0 +1,41 @@
+.new-tweet{
+  display:flex;
+  flex-direction:column;
+  align-items: stretch;
+  width:100%;
+  margin:2em;
+}
+
+#tweet-text {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style:solid;
+  background-color: #f4f1ec;
+  width:100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+#button-and-count{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.tweeter-button{
+  background-color: rgb(40, 40, 165);
+  border-radius: 4px;
+  border-style: none;
+  color:white;
+  font-family: "Bungee";
+  font-size: .75em;
+  padding:8px;
+  text-align:center;
+
+}
+
+output{
+  font-family: "Bungee";
+}
