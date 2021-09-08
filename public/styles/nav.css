@@ -13,13 +13,14 @@ nav span {
   font-family: 'Bungee';
   margin-left: 1.5em;
   margin-right: 1.5em;
+  white-space: nowrap;
 }
 
 #nav-spacer{
   width:100%;
 }
 
-#nav-action-text{
-
+#nav-action-text {
+  font-family: 'Source Sans Pro';
 }
 

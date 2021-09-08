@@ -18,6 +18,11 @@
   font-weight: 600;
 }
 
+/* removes outline to imput bopxes when selected */
+textarea:focus, input:focus{
+  outline: none;
+}
+
 #button-and-count{
   display: flex;
   flex-direction: row;
