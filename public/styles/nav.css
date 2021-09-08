@@ -2,10 +2,14 @@ nav {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  height:120px;
+  height:100px;
   width: 100vw;
-  background-color: #4056A1;
+  background-color: #4e4332;
   color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 
 }
 
