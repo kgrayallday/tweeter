@@ -9,7 +9,9 @@ article{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   margin-bottom: 2em;
   border-radius: 3px;
-  }
+  margin-left:0.3em;
+  margin-right:0.3em;
+}
 
 article:hover{
   box-shadow: 7px 7px 6px 0px gray;
@@ -20,25 +22,25 @@ article header{
   background-color: transparent;
   background-image: none;
   box-shadow: none;
-  display:flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  margin-top:0;
-  height: fit-content;
+  margin-top: 0;
+  height: auto;
   flex: 0 1 auto;
 }
 
 article footer{
-  height:max-content;
-  width:100%;
+  height: max-content;
+  width: 100%;
   background-color: transparent;
-  display:flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   max-height: fit-content;
-  height:auto;
+  height: auto;
   flex: 0 1 auto
 }
 
@@ -50,7 +52,7 @@ article footer{
 .div-line{
   height: 2px;
   background-color: gray;
-  width:100%;
+  width: 100%;
 }
 
 .user-icon-name{
@@ -65,12 +67,13 @@ article footer{
 
 .user-icon-name h2{
   font-size: 1.2em;
-  margin-top:1em
+  margin-top: 1em;
+  margin-left: 0.5em;
 }
 
 .user-tag h3{
   font-size: 0.75em;
-  color:rgb(152, 109, 72);
+  color: rgb(152, 109, 72);
 }
 
 article header{
@@ -80,25 +83,22 @@ article header{
 .post-age{
   white-space: nowrap;
 }
-.spacer{
-  width:100%;
-}
 
 .interact{
-  display:flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
 }
 
-footer{
+article footer{
   flex-grow: 1;
 }
 
-.fas{
-  padding-right:0.5em;
+article i{
+  padding-right: 0.5em;
   font-size: .8em;
 }
 
-.fas:hover{
+article i:hover{
   color:rgb(225, 144, 23);
   filter: drop-shadow(1px 1px 1px #8a8a8a);
 }

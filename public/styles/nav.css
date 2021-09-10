@@ -26,5 +26,19 @@ nav span {
 
 #nav-action-text {
   font-family: 'Source Sans Pro';
+  margin-right: .5em;
 }
 
+nav i{
+  padding-right:.5em;
+  animation-name: floating;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 6px); }
+  to   { transform: translate(0, -0px); }    
+}

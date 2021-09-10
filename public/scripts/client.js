@@ -59,7 +59,7 @@ $(() => {
 
     if (rawInput.length > 140) {
       $('.error-msg')
-        .html("<p> Post must be under <u>140<u> characters.</p>")
+        .html("<p> Post must be under <u>140</u> characters.</p>")
         .slideDown('slow')
       return false;
     }
@@ -80,7 +80,6 @@ $(() => {
       loadTweets()
     });
   });
-
   loadTweets()
 });
 
