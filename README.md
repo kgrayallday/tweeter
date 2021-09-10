@@ -1,11 +1,12 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone built with Express, JQuery and AJAX.
 
 This repository is an educational project for Lighthouse Labs Web Development Bootcamp and is for demonstration and educational purposes only.
 
 ## Preview 
-![Preview](#)
+![Preview](https://github.com/kgrayallday/tweeter/blob/master/docs/demo.gif?raw=true)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
