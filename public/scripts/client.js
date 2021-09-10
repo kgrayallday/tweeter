@@ -1,11 +1,5 @@
 $(() => {
 
-  const escape = function (str) {
-    let div = document.createElement("div");
-    div.appendChild(document.createTextNode(str));
-    return div.innerHTML;
-  };
-
   // Tweet <article> template
   const createTweetElement = (tweet) => {
     const $tweet = 
@@ -37,9 +31,9 @@ $(() => {
         </footer>
       </article>`;
     return $tweet;
-
   }
 
+  // (re)draws tweet article to tweet container div
   const renderTweets = function(tweets) {
     const $tweetsContainer = $('#tweets-container');
     $tweetsContainer.empty()
@@ -61,7 +55,7 @@ $(() => {
     event.preventDefault();
     const $form = $(this);
     const data = $form.serialize();
-    const rawInput = $(this).find('input').val();
+    const rawInput = $(this).find('textarea').val();
 
     if (rawInput.length > 140) {
       $('.error-msg')
@@ -89,3 +83,9 @@ $(() => {
 
   loadTweets()
 });
+
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};

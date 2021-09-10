@@ -5,10 +5,11 @@ article{
   border: 1px solid gray;
   padding-left: 1.5em;
   padding-right: 1.5em;
-  background-color: #f4f1ec;
-  box-shadow: 6px 6px 6px -3px lightgray;
+  background-color: #f0ede9;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   margin-bottom: 2em;
-}
+  border-radius: 3px;
+  }
 
 article:hover{
   box-shadow: 7px 7px 6px 0px gray;
@@ -28,8 +29,22 @@ article header{
   flex: 0 1 auto;
 }
 
+article footer{
+  height:max-content;
+  width:100%;
+  background-color: transparent;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: baseline;
+  max-height: fit-content;
+  height:auto;
+  flex: 0 1 auto
+}
+
 .post-content{
-  flex: 1 1 auto;
+  flex: 2 1 auto;
+  max-width:50ch;
 }
 
 .div-line{
@@ -44,17 +59,22 @@ article header{
   align-items: baseline;
 }
 
-article footer{
-  height: fit-content;
-  width:100%;
-  background-color: transparent;
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
+.user-icon-name img{
+  align-self: center;
+}
+
+.user-icon-name h2{
+  font-size: 1.2em;
+  margin-top:1em
+}
+
+.user-tag h3{
+  font-size: 0.75em;
+  color:rgb(152, 109, 72);
+}
+
+article header{
   align-items: baseline;
-  max-height: fit-content;
-  height:auto;
-  flex: 0 1 auto
 }
 
 .post-age{
@@ -75,7 +95,10 @@ footer{
 
 .fas{
   padding-right:0.5em;
+  font-size: .8em;
 }
+
 .fas:hover{
   color:rgb(225, 144, 23);
+  filter: drop-shadow(1px 1px 1px #8a8a8a);
 }

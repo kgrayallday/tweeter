@@ -19,9 +19,11 @@
   margin-top: 1em;
   margin-bottom: 1em;
   font-weight: 600;
+  resize: none;
+  height:3col;
+  overflow: hidden;
 }
 
-/* removes outline to imput bopxes when selected */
 textarea:focus, input:focus{
   outline: none;
 }
@@ -42,7 +44,12 @@ textarea:focus, input:focus{
   font-size: .75em;
   padding:8px;
   text-align:center;
+}
 
+.tweeter-button:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transform: translate(-3px, -3px);
+  color:rgb(244, 244, 244);
 }
 
 output{
