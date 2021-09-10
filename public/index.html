@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -56,8 +57,8 @@
 
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        <div class="error-msg"></div>
         <form id="new-tweet-form" action="/tweets/" method="POST">
-          <!-- <label for="tweet-text">What are you humming about?</label> -->
           <input name="text" id="tweet-text" placeholder="What are you humming about?"></input>
           <div id="button-and-count">
             <button class="tweeter-button" type="submit">Tweet</button>
@@ -67,37 +68,6 @@
       </section>
 
       <section id="tweets-container">
-        <!-- <article>
-          <header>
-            <div class="user-icon-name">
-              <i class="fas fa-user-astronaut"></i>
-              <h2>Newton</h2>
-            </div>
-            <div class="user-tag">
-              <h3>@Sirisaac</h3>
-            </div>
-          </header>
-
-          <div class ='post-content'>
-          <p>If I have seen further it is by standing on the shoulders of giants</p>
-          <div class="div-line"></div>
-          </div>
-
-          <footer class="article-footer">
-            <div class="post-age">
-              <h6>10 days ago</h6>
-            </div>
-
-            <div class="spacer"></div>
-
-            <div class="interact">
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-
-        </article> -->
 
 
       </section>

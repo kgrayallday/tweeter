@@ -60,25 +60,29 @@ $(() => {
   $('form').submit(function(event) {
     event.preventDefault();
     const $form = $(this);
-
-    console.log('what the form looks like: ', $form);
     const data = $form.serialize();
-
     const rawInput = $(this).find('input').val();
-    console.log('raw input ', rawInput);
 
     if (rawInput.length > 140) {
-      alert('You can only do 140 characters');
-      return false;
-    }
-    if (rawInput === '' || rawInput === null){
-      alert('you cant submit nothing');
+      $('.error-msg')
+        .html("<p> Post must be under <u>140<u> characters.</p>")
+        .slideDown('slow')
       return false;
     }
 
-    // AJAX
+    if (rawInput === '' || rawInput === null){
+      // $('.error-msg').css("visibility", "visible");
+      $('.error-msg')
+        .html("<p>you have to post <em>something!<em></p>")
+        .slideDown('slow')
+      return false;
+    }
+
+    // AJAX POST
     $.post("/tweets", data, res => {
       console.log(res);
+      $('.error-msg').slideUp();
+      $(this).trigger('reset');
       loadTweets()
     });
   });

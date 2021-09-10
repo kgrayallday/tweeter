@@ -29,6 +29,7 @@ textarea:focus, input:focus{
 #button-and-count{
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   justify-content:space-between;
 }
 
@@ -46,4 +47,15 @@ textarea:focus, input:focus{
 
 output{
   font-family: "Bungee";
+}
+
+.error-msg{
+  font-weight: 900;
+  color: rgb(177, 24, 24);
+  font-size: 1.2em;
+  display:none;
+}
+
+main section h2{
+  margin-top:0;
 }
