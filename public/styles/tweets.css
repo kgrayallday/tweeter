@@ -11,6 +11,7 @@ article{
   border-radius: 3px;
   margin-left:0.3em;
   margin-right:0.3em;
+  min-width: 475px;
 }
 
 article:hover{
@@ -19,13 +20,14 @@ article:hover{
 }
 
 article header{
+  width:100%;
   background-color: transparent;
   background-image: none;
   box-shadow: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: stretch;
   margin-top: 0;
   height: auto;
   flex: 0 1 auto;

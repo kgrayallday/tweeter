@@ -1,11 +1,8 @@
-header{
+header.profile{
   text-align:center;
-  width: 100%;
-  height: 400px;
   background-color: #ab927f;
   background-image: url("https://www.transparenttextures.com/patterns/cardboard-flat.png");
-  margin-top:3.3em;
-  box-shadow: inset 0 -6px 8px -4px grey;
+  padding-top:5em;
 }
 
 .profile-hex {
