@@ -55,6 +55,12 @@ main.container{
 /* Mobile Layout */
 @media only screen and (max-width: 1023px) {
   
+  #wordmark{
+    font-size: 0.75em;
+  }
+  #nav-action-text{
+    font-size: 0.75em;
+  }
   section.new-tweet{
     width:90%;
     margin:2em;
@@ -85,6 +91,9 @@ main.container{
 /* Desktop Layout */
 @media only screen and (min-width: 1024px) {
   
+  #wordmark{
+    font-size: 1em;
+  }
   .media-desktop{
     display: flex;
     flex-direction: row;
