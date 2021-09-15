@@ -97,7 +97,7 @@ $(() => {
     $.post("/tweets", data, res => {
       $('.error-msg').slideUp();
       $(this).trigger('reset');
-      loadTweets()
+      loadTweets();
     });
   });
   loadTweets()
