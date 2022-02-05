@@ -1,3 +1,4 @@
+// shortform for #( document ).ready()
 $(() => {
 
   // Tweet <article> template
@@ -56,13 +57,13 @@ $(() => {
   };
 
 
-  // on submit posts tweet and reloads tweets
+  // on submit - prevent default form submit then post tweet and reload tweets
   $('form').submit(function(event) {
     event.preventDefault();
     const $form = $(this);
     const data = $form.serialize();
     const rawInput = $(this).find('textarea').val();
-  
+    
     if (rawInput && !rawInput.trim()) {
       $('.error-msg')
       .html("<p> You cannot post whitespace only </p>")
